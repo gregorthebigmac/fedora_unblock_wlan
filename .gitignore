@@ -30,3 +30,11 @@
 *.exe
 *.out
 *.app
+keep_wlan_up
+
+# Ignore vscode settings
+.vscode/
+
+# Do not include command library. Pull separately from git repo
+# https://github.com/gregorthebigmac/command
+command/
