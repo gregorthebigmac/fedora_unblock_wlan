@@ -1,0 +1,10 @@
+[Unit]
+Description=Hack to keep wlan up even when Fedora keeps turning it off. But if wlan is turned off with a hardware switch, this will not try to bring it back.
+
+[Service]
+ExecStart=/usr/bin/keep_wlan_up
+StandardOutput=null
+
+[Install]
+WantedBy=multi-user.target
+Alias=keep_wlan_up.service
