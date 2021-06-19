@@ -1,8 +1,8 @@
 #!/bin/bash
 
 make && \
-sudo cp keep_wlan_up /usr/bin/keep_wlan_up && \
-sudo cp keep_wlan_up.service /lib/systemd/system/keep_wlan_up.service && \
-sudo systemctl enable keep_wlan_up.service && \
-sudo systemctl start keep_wlan_up.service && \
-systemctl status keep_wlan_up.service
+sudo cp keep_bt_down /usr/bin/keep_bt_down && \
+sudo cp keep_bt_down.service /lib/systemd/system/keep_bt_down.service && \
+sudo systemctl enable keep_bt_down.service && \
+sudo systemctl start keep_bt_down.service && \
+systemctl status keep_bt_down.service

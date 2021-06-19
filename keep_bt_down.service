@@ -1,0 +1,10 @@
+[Unit]
+Description=Hack to keep bluetooth down even when Fedora keeps turning it on.
+
+[Service]
+ExecStart=/usr/bin/keep_bt_down
+StandardOutput=null
+
+[Install]
+WantedBy=multi-user.target
+Alias=keep_bt_down.service
